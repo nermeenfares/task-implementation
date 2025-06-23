@@ -1,14 +1,20 @@
+/** @type {import('tailwindcss').Config} */
 import defaultTheme from "tailwindcss/defaultTheme";
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  darkMode: "class", // Enable dark mode with class strategy
   theme: {
     extend: {
       fontFamily: {
         sans: ["var(--font-space-grotesk)", ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        // Your custom colors
         primary: "#373737",
         secondary: "#9a9a9a",
         accent: {
@@ -16,6 +22,28 @@ export default {
           light: "#c7deec",
           medium: "#b5cddf",
         },
+        // Add CSS variables for shadcn/ui compatibility
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        card: {
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
+        },
+        popover: {
+          DEFAULT: "var(--popover)",
+          foreground: "var(--popover-foreground)",
+        },
+        muted: {
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
+        },
+        destructive: {
+          DEFAULT: "var(--destructive)",
+          foreground: "var(--destructive-foreground)",
+        },
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
       },
       fontSize: {
         base: "16px",
@@ -30,6 +58,9 @@ export default {
         display: "0.165em",
       },
       borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
         "4xl": "2rem",
       },
       dropShadow: {

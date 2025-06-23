@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import TextInput from "../FormFields/TextInput";
+import TextInput from "../../FormFields/TextInput";
 
 function Hero() {
   return (
