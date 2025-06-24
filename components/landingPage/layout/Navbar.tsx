@@ -11,7 +11,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full">
+    <nav className="w-full bg-transparent relative ">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-end sm:justify-center items-center">
         <ul className="hidden md:flex justify-center gap-8 text-[16px] font-medium">
           {navLinks.map((link) => (
@@ -29,7 +29,6 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-[#373737]"
