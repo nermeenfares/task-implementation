@@ -70,7 +70,6 @@ const AboutSection = () => {
             </div>
 
             <div className="relative pt-6 px-6 pb-4 rounded-xl overflow-hidden bg-gradient-to-bl from-[#171D2E] to-[#2A2F41] border border-white/10 backdrop-blur-sm">
-              {/* Fading white border overlay */}
               <div
                 className="absolute inset-0 rounded-xl border border-white pointer-events-none"
                 style={{
@@ -81,7 +80,6 @@ const AboutSection = () => {
                 }}
               ></div>
 
-              {/* Content */}
               <div className="text-3xl font-bold mb-2 text-white">
                 120+ Billion
               </div>

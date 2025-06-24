@@ -61,7 +61,7 @@ export default function SearchBar({ onSearch }: Props) {
     <div className="mb-4">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col sm:flex-row gap-4 items-center justify-center"
+        className="flex flex-col sm:flex-row gap-52 items-center justify-center"
       >
         <div className="w-full sm:w-[300px]">
           <TextInput

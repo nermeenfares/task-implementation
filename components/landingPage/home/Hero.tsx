@@ -15,12 +15,12 @@ function Hero() {
       <div
         className="absolute bg-[#b5cddf] rounded-4xl -rotate-[40deg] blur-3xl"
         style={{
-          width: "70vw",
-          maxWidth: "700px",
+          width: "100vw",
+          maxWidth: "1000px",
           height: "200px",
           top: "160px",
           left: "50%",
-          transform: "translateX(-50%)",
+          transform: "translateX(-50%) rotate(-60deg)",
         }}
       ></div>
 
