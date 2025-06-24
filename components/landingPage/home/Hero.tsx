@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import TextInput from "../../FormFields/TextInput";
+import BlurredBackground from "../BlurredBackground";
 
 function Hero() {
   return (
@@ -11,19 +12,7 @@ function Hero() {
       }}
       className="pt-28 bg-white flex flex-col items-center justify-center w-full pb-16 text-center relative z-10 overflow-hidden"
     >
-      <div className="absolute top-0 left-0 w-[200px] sm:w-[300px] md:w-[349px] h-[60%] bg-[#c7deec] blur-3xl"></div>
-      <div
-        className="absolute bg-[#b5cddf] rounded-4xl -rotate-[40deg] blur-3xl"
-        style={{
-          width: "100vw",
-          maxWidth: "1000px",
-          height: "200px",
-          top: "160px",
-          left: "50%",
-          transform: "translateX(-50%) rotate(-60deg)",
-        }}
-      ></div>
-
+      <BlurredBackground />
       <div className="z-10 flex flex-col items-center gap-16 px-4">
         <p className="text-[#373737] text-[36px] sm:text-[48px] md:text-[64px] lg:text-[86px] font-bold leading-tight">
           ELEVATING EVENTS TO
